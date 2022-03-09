@@ -16,7 +16,7 @@ func conexionBD() (conexion *sql.DB) {
 	Usuario := "root"
 	Contrasenia := "rootroot"
 	Nombre := "sistema"
-
+	//lo que sea
 	conexion, err := sql.Open(Driver, Usuario+":"+Contrasenia+"@tcp(127.0.0.1)/"+Nombre)
 	if err != nil {
 		panic(err.Error())
